@@ -1,16 +1,16 @@
 ---
-title: Bienvenido a Web de Finanzas
-description: Tu punto de partida para dominar tus finanzas personales.
+title: Welcome to Finance+
+description: Your starting point to master personal finance.
 pubDate: 2026-07-09
-tags: ["finanzas", "ahorro"]
+tags: ["finance", "investing"]
 author: Admin
 draft: false
 ---
 
-Bienvenido a **Web de Finanzas**. Aquí encontrarás guías, consejos y estrategias para:
+Welcome to **Finance+**. Here you'll find guides, tips, and strategies to:
 
-- **Ahorrar** de manera inteligente
-- **Invertir** con confianza
-- **Planificar** tu futuro financiero
+- **Save** money intelligently
+- **Invest** with confidence
+- **Plan** your financial future
 
-Estamos construyendo contenido de calidad para ayudarte a tomar el control de tu dinero. ¡Mantente atento a nuevos artículos!
+We're building high-quality content to help you take control of your money. Stay tuned for new articles!

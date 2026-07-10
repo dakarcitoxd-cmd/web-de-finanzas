@@ -2,8 +2,8 @@ backend:
   name: github
   repo: tu-usuario/tu-repositorio
   branch: main
-  site_domain: tudominio.pages.dev
-  base_url: https://tudominio.pages.dev
+  site_domain: web-de-finanzas.pages.dev
+  base_url: https://web-de-finanzas.pages.dev
   auth_endpoint: /api/auth
 
 media_folder: public/uploads
@@ -11,16 +11,16 @@ public_folder: /uploads
 
 collections:
   - name: blog
-    label: Artículos
+    label: Articles
     folder: src/content/blog
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Descripción", name: "description", widget: "text" }
-      - { label: "Fecha", name: "pubDate", widget: "datetime" }
-      - { label: "Imagen", name: "image", widget: "image", required: false }
-      - { label: "Etiquetas", name: "tags", widget: "list", default: [], required: false }
-      - { label: "Autor", name: "author", widget: "string", default: "Admin" }
-      - { label: "Borrador", name: "draft", widget: "boolean", default: false, required: false }
-      - { label: "Contenido", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Date", name: "pubDate", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [], required: false }
+      - { label: "Author", name: "author", widget: "string", default: "Admin" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Content", name: "body", widget: "markdown" }

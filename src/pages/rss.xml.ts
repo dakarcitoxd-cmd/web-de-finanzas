@@ -6,8 +6,8 @@ export async function GET(context) {
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Web de Finanzas',
-    description: 'Tu guía financiera — inversión, ahorro y finanzas personales',
+    title: 'Finance+',
+    description: 'Your financial guide — investing, saving, and personal finance',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

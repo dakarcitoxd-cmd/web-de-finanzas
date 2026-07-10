@@ -11,7 +11,7 @@ const { frontmatter } = Astro.props;
       <h1 class="text-4xl font-bold text-dark">{frontmatter.title}</h1>
       <p class="text-muted mt-2">{frontmatter.description}</p>
       <time datetime={frontmatter.pubDate.toISOString()} class="text-sm text-muted">
-        {frontmatter.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}
+        {frontmatter.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
       </time>
       {frontmatter.tags && (
         <div class="flex gap-2 mt-3">

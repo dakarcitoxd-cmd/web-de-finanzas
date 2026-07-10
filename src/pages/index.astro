@@ -7,28 +7,28 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const latest = posts.slice(0, 3);
 ---
 
-<BaseLayout title="Web de Finanzas — Tu guía financiera" description="Aprende a invertir, ahorrar y hacer crecer tu dinero con consejos prácticos.">
+<BaseLayout title="Finance+ — Your Guide to Financial Freedom" description="Learn to invest, save, and grow your money with practical advice.">
   <section class="text-center py-16">
-    <h1 class="text-5xl font-bold text-dark">Tu guía financiera</h1>
+    <h1 class="text-5xl font-bold text-dark">Your Financial Guide</h1>
     <p class="text-xl text-muted mt-4 max-w-2xl mx-auto">
-      Aprende a invertir, ahorrar y hacer crecer tu dinero.
+      Learn to invest, save, and grow your money.
     </p>
   </section>
 
   <section>
-    <h2 class="text-2xl font-semibold mb-6">Últimos artículos</h2>
+    <h2 class="text-2xl font-semibold mb-6">Latest Articles</h2>
     {latest.length > 0 ? (
       <div class="grid gap-6 md:grid-cols-3">
         {latest.map((post) => (
           <a href={`/blog/${post.id}`} class="block border rounded-lg p-6 hover:shadow-lg transition-shadow">
             <h3 class="font-bold text-lg">{post.data.title}</h3>
             <p class="text-muted text-sm mt-2">{post.data.description}</p>
-            <time class="text-xs text-muted mt-2 block">{post.data.pubDate.toLocaleDateString('es-ES')}</time>
+            <time class="text-xs text-muted mt-2 block">{post.data.pubDate.toLocaleDateString('en-US')}</time>
           </a>
         ))}
       </div>
     ) : (
-      <p class="text-muted">Próximamente nuevos artículos.</p>
+      <p class="text-muted">New articles coming soon.</p>
     )}
   </section>
 </BaseLayout>

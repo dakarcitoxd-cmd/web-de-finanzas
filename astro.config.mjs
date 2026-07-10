@@ -3,7 +3,7 @@ import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://tusitio.com',
+  site: 'https://web-de-finanzas.pages.dev',
   integrations: [mdx()],
   vite: {
     plugins: [tailwindcss()],
