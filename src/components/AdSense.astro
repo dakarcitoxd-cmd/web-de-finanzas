@@ -1,0 +1,18 @@
+---
+const { slot, format = 'auto' } = Astro.props;
+const adClient = import.meta.env.PUBLIC_ADSENSE_CLIENT_ID || '';
+---
+
+{adClient && (
+  <div class="my-8 flex justify-center">
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={adClient}
+      data-ad-slot={slot}
+      data-ad-format={format}
+      data-full-width-responsive="true"
+    />
+    <script set:html={`(adsbygoogle = window.adsbygoogle || []).push({});`} />
+  </div>
+)}
